@@ -522,11 +522,21 @@ textarea{
         cursor: pointer;
         padding-right: 1rem;
     }
+
+    /*.navbar{
+        width: 100%;
+    } */
     
-    .nav-btn1{
+    .nav-btn2{
         margin-left: 0px;
-        width: 30%;
+        width: 100%;
+        margin-left: 400px;
     }
+
+    .nav-btn1{
+        display: none;
+    }
+
 
     .sub-btn{
         margin-left: 5rem;
@@ -538,7 +548,8 @@ textarea{
 
     .ftr{
         margin-top: 0%;
-        width: 120vmax;
+        /*width: 100vmax;*/
+        width: max-content;
     }
 
 } 
