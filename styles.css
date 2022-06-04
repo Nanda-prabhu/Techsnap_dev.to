@@ -141,6 +141,77 @@ button.log-in:hover {
     border-radius: 20px;
 }   ***************************************/
 
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: 4rem auto;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(121, 121, 121, 0.07);
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    padding: 2rem;
+    line-height: 25px;
+}
+
+.link-p{
+    
+   /*justify-content: center;
+    padding-right: 1rem;
+    border-radius: 50%;
+    background-color: grey;
+    font-size: 15px;
+    padding-left: 16px;
+    line-height: 30px;
+    flex-shrink: 0; */
+    font-style: 2rem;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    color: rgb(15, 15, 15);
+
+}
+
+h5{
+    display: flex;
+    font-weight: 300;
+}
+
+.links-sub p {
+    font-size: 2rem;
+    background-color: #3b49df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.links-dupe{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title-p{
+    color:blue;
+}
+.title-p:hover{
+    cursor: pointer;
+}
+.links-sub:hover{
+    cursor: pointer;
+}
+
 .blogger-img{
     border-radius: 50%;
     display: flex;
@@ -287,7 +358,7 @@ textarea{
     outline: none;
     display: block;
     background-color: white;
-    border: 2px solid rgb(254, 252, 252);
+    border: 2px solid rgb(191, 175, 175);
     padding: 10px;
     font-size: 14px;
     border-radius: 5px;
@@ -316,7 +387,7 @@ textarea{
 }*/
 
 .sidebar{ 
-    height: 20%;
+    height: fit-content;
     width: fit-content; /****width: fit-content;****/
     margin-right: 100px;
     border-radius: 10px;
@@ -324,11 +395,13 @@ textarea{
     /*margin-top: 50px; */
     background-color: white;
     font-size: 12px;
-    padding-bottom: 200px;
+    padding-bottom: 70px;
+    border-bottom-width: 70px;
 
     position: sticky;
     top: 70px;
    /* padding: 10px; */
+   z-index: -5;
 
     
     /*grid-column-start: 4;   */
@@ -347,9 +420,9 @@ textarea{
 
 .follow-btn{
     justify-content: center;
-    width: 80%;
+    width: 65%;
     padding: 8px 16px 8px 16px;
-    margin-left: 38px;
+    margin-left: 4rem;
     color: white;
     background-color: rgb(26, 89, 207);
     border-radius: 5px;
@@ -369,15 +442,18 @@ textarea{
     justify-content: start;
     line-height: 20px;
     /***gappppppppppppppppp****/
+    row-gap: 20px;
+    border-top: 35px solid rgb(13, 10, 62);
+    border-radius: inherit;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .flex-item > img{
     border-radius: 50%;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: -22px;
 }
-
-
 
 
 
@@ -400,7 +476,69 @@ textarea{
     margin-right: auto;
 }                 */
 
+/********************************************   Mobile view    ***************************************************/
 
+@media only screen and (max-width: 600px)
+{
+    body {
+      background-color: whitesmoke;
+      
+    }
 
+   /* .sidebar{
+        display: none;
+    }  */
 
+    .main{
+        margin-left: 0;
+        grid-template-columns: auto;
+    }
 
+    .postman-import{
+        display: grid;
+        place-items: center;
+    }
+
+    .news-card-enter-discussion{
+        display: block;
+    }
+
+    .youtube{
+        display: grid;
+        align-items: center;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+    
+    #search-box{
+        display: none;
+    }
+
+    .navbar > img{
+        display: flex;
+        height: 38px;
+        cursor: pointer;
+        padding-right: 1rem;
+    }
+    
+    .nav-btn1{
+        margin-left: 0px;
+        width: 30%;
+    }
+
+    .sub-btn{
+        margin-left: 5rem;
+    }
+
+    h2{
+        margin-right: 200px;
+    }
+
+    .ftr{
+        margin-top: 0%;
+        width: 120vmax;
+    }
+
+} 
