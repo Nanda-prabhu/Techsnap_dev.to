@@ -395,7 +395,7 @@ textarea{
     /*margin-top: 50px; */
     background-color: white;
     font-size: 12px;
-    padding-bottom: 70px;
+   
     border-bottom-width: 70px;
 
     position: sticky;
@@ -410,6 +410,7 @@ textarea{
 .sidebar-p{
     justify-content: start;
     line-height: 20px;
+    font-size: 12px;
 }
 
 .sidebar-p-span{
@@ -436,6 +437,10 @@ textarea{
 
 .about-devteam{
     background-repeat: 20px;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .about-follow{
@@ -447,6 +452,10 @@ textarea{
     border-radius: inherit;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 15px;
+    border-right: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+    border-left: 1px solid rgb(184, 184, 184);
 }
 
 .flex-item > img{
@@ -551,5 +560,49 @@ textarea{
         /*width: 100vmax;*/
         width: max-content;
     }
+
+    /*****************new changes********************/
+
+    .main-card{
+        font-size: x-large;
+        line-height: 35px;
+        word-spacing: 6px;
+    }
+
+    .content-names{
+        font-size: large;
+    }
+
+    .follow{
+        font-size: x-large;
+        word-spacing: 6px;
+    }
+
+    .coffee{
+        font-size: x-large;
+        word-spacing: 6px;
+    }
+
+    .mail{
+        font-size: x-large;
+        word-spacing: 6px;
+    }
+
+    .about-follow{
+        font-size: xx-large;
+        word-spacing: 6px;
+    }
+
+    .sidebar-p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sidebar-p-span{
+        padding-bottom: 1rem;
+        font-size: 20px;
+        line-height: 30px;  
+    }
+
+
 
 } 
